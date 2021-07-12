@@ -8,10 +8,13 @@ const AllStudentsView = (props) => {
   if (!students.length) {
     return (
       <div>
-        <p>There are no students.</p>
-        <Link to={`student/new`}>
-          <button>Add New Student</button>
-        </Link>
+        <Nav></Nav>
+        <div className="student">
+          <p>There are no students.</p>
+          <Link to={`student/new`}>
+            <button>Add New Student</button>
+          </Link>
+        </div>
       </div>
     );
   }
@@ -27,13 +30,13 @@ const AllStudentsView = (props) => {
               <img src={student.imageURL} alt="" height="100px"></img>
               <h1>{name}</h1>
             </Link>
-            <button onClick={() => deleteStudent(student.id)}>Delete</button>
+            <button onClick={() => deleteStudent(student.id)}> ✕ </button>
           </div>
         );
       }
       )}
       <Link to={`/newstudent`}>
-        <button>Add New Student</button>
+        <button id="addStudent">Add New Student</button>
       </Link>
     </div>
   );

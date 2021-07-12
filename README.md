@@ -1,6 +1,7 @@
-# Starter code for CRUD App
+# Client
 
-## Client 
+#### Masum Ahmed (masumahmed)
 
+## Run 
 `npm install`
 `npm start`

@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import {deleteCampus } from "../../store/actions/actionCreators";
 import { Nav } from "../Nav";
 
 const AllCampusesView = (props) => {
@@ -16,6 +17,7 @@ const AllCampusesView = (props) => {
             <img src={campus.imageURL} alt="" height="100px"></img>
             <h1>{campus.name}</h1>
           </Link>
+          <button onClick={() => deleteCampus(campus.id)}> ✕ </button>
         </div>
       ))}
     </div>

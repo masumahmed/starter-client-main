@@ -48,3 +48,22 @@ code {
         text-decoration: none;
     }
 }
+
+#addStudent {
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    background-color: #303F9F;
+    color: white;
+
+    &:hover{
+        filter: brightness(0.7);
+    }
+}
+
+a {
+    text-decoration: none;
+}

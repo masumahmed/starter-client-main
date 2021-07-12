@@ -1,3 +1,4 @@
+import { campus } from '../reducers';
 import * as at from './actionTypes';
 
 // ACTION CREATORS;
@@ -18,6 +19,13 @@ export const fetchCampus = (campus) => {
   return {
     type: at.FETCH_CAMPUS,
     payload: campus,
+  };
+};
+
+export const deleteCampus = (campusId) => {
+  return {
+    type: at.DELETE_CAMPUS,
+    payload: campusId,
   };
 };
 

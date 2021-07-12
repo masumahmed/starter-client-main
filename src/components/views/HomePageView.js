@@ -4,7 +4,8 @@ const HomePageView = () => {
   return (
     <div>
       <Nav></Nav>
-      <div>
+      <div className="student">
+        <h1>Home</h1>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ const StudentView = (props) => {
         <h3>{student.email}</h3>
         <h3>GPA: {student.gpa}</h3>
         <h3>
-          <Link to={`/campus/${campus.id}`} >{student.campus.name}</Link>
+          <Link to={`/campus/${student.campusId}`} >{student.campus.name}</Link>
         </h3>
       </div>
     </div>

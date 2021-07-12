@@ -49,4 +49,26 @@ code {
 .student a {
   text-decoration: none;
 }
+
+#addStudent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 15px;
+  border: none;
+  background-color: #303F9F;
+  color: white;
+}
+
+#addStudent:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+a {
+  text-decoration: none;
+}
 /*# sourceMappingURL=index.css.map */
